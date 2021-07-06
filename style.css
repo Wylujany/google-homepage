@@ -1,0 +1,22 @@
+body {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.nav-left a {
+  opacity: 0.75;
+  padding: 15px;
+}
+.nav-right a {
+  opacity: 0.75;
+  padding: 15px;
+}
