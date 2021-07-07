@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -15,24 +16,29 @@ body {
   align-items: center;
   font: 13px/27px Arial, sans-serif;
 }
+
 .nav-left {
   margin-left: 15px;
 }
+
 .nav-left a {
-  opacity: 0.6;
+  opacity: 0.9;
   padding: 5px;
 }
+
 .nav-right {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 .nav-right a {
-  opacity: 0.6;
+  opacity: 0.9;
   padding: 5px;
 }
+
 #apps {
   position: relative;
   top: 8px;
 }
+
 #sign-in {
   background-color: #4583ed;
   padding: 5px;
@@ -43,6 +49,7 @@ body {
   margin-right: 10px;
   font-family: arial, sans-serif;
 }
+
 #middle-div {
   display: flex;
   flex-direction: column;
@@ -51,14 +58,16 @@ body {
   height: 750px;
   flex-grow: 1;
 }
+
 #content-div {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  bottom: 100px;
+  bottom: 130px;
 }
+
 #google_logo {
   max-width: 100%;
   max-height: 100%;
@@ -73,12 +82,11 @@ body {
   display: flex;
   justify-content: center;
 }
+
 #search-container:hover {
-  background-color: #e8e6e6;
+  box-shadow: -1px 1px 5px 3px rgba(0, 0, 0, 0.1);
 }
-#search-container:hover > #search-bar {
-  background-color: #e8e6e6;
-}
+
 .search-icon {
   position: relative;
   height: 24px;
@@ -95,10 +103,12 @@ body {
   height: 20px;
   top: 3px;
 }
+
 #buttons-div {
   position: relative;
   top: 10px;
 }
+
 .bot-buttons {
   border: none;
   border-radius: 4px;
@@ -114,10 +124,12 @@ body {
   cursor: pointer;
   user-select: none;
 }
+
 .bot-buttons:hover {
   border: 1px solid black;
   color: black;
 }
+
 footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
@@ -131,14 +143,24 @@ footer {
   align-items: flex-start;
   margin-top: auto;
 }
+
 #left-foot {
   display: flex;
   flex-direction: row;
-}
-footer a {
-  margin: 5px;
+  margin-left: 20px;
 }
 #right-foot {
   display: flex;
   flex-direction: row;
+  margin-right: 20px;
+}
+
+footer a {
+  margin: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0);
 }
