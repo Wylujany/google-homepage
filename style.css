@@ -3,6 +3,7 @@ body {
   background-color: #fff;
   padding: 0;
   margin: 0;
+  height: 100vh;
 }
 .navbar {
   display: flex;
@@ -10,6 +11,8 @@ body {
   justify-content: space-between;
   height: 50px;
   align-items: center;
+  background-color: red;
+  font: 13px/27px Arial, sans-serif;
 }
 
 .nav-left a {
@@ -19,4 +22,50 @@ body {
 .nav-right a {
   opacity: 0.75;
   padding: 15px;
+}
+#sign-in {
+  background-color: #4583ed;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+#logo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100% - 560px);
+}
+#google_logo {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+  top: 170px;
+}
+#below-logo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+#search-container {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  width: 500px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.search-icon {
+  position: relative;
+  height: 24px;
+}
+#search-bar {
+  width: 500px;
+  border: none;
+}
+.voice {
+  position: relative;
+  height: 20px;
+  top: 3px;
 }
