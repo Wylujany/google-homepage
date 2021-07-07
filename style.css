@@ -3,7 +3,9 @@ body {
   background-color: #fff;
   padding: 0;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .navbar {
   display: flex;
@@ -29,7 +31,7 @@ body {
 }
 #apps {
   position: relative;
-  bottom: 1px;
+  top: 8px;
 }
 #sign-in {
   background-color: #4583ed;
@@ -41,33 +43,41 @@ body {
   margin-right: 10px;
   font-family: arial, sans-serif;
 }
-#logo-div {
+#middle-div {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: calc(100% - 560px);
+  height: 750px;
+  flex-grow: 1;
+}
+#content-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 100px;
 }
 #google_logo {
-  position: relative;
   max-width: 100%;
   max-height: 100%;
-  vertical-align: bottom;
-  top: 170px;
+  padding-bottom: 30px;
 }
-#below-logo-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
-  height: 450px;
-}
+
 #search-container {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  border-radius: 25px;
   width: 500px;
   padding: 10px;
   display: flex;
   justify-content: center;
+}
+#search-container:hover {
+  background-color: #e8e6e6;
+}
+#search-container:hover > #search-bar {
+  background-color: #e8e6e6;
 }
 .search-icon {
   position: relative;
@@ -76,7 +86,10 @@ body {
 #search-bar {
   width: 500px;
   border: none;
+  height: 25px;
+  outline: 0;
 }
+
 .voice {
   position: relative;
   height: 20px;
@@ -89,7 +102,7 @@ body {
 .bot-buttons {
   border: none;
   border-radius: 4px;
-  color: #303134;
+  color: #6a6a6a;
   font-family: arial, sans-serif;
   font-size: 14px;
   margin: 11px 4px;
@@ -101,6 +114,10 @@ body {
   cursor: pointer;
   user-select: none;
 }
+.bot-buttons:hover {
+  border: 1px solid black;
+  color: black;
+}
 footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
@@ -109,13 +126,17 @@ footer {
   height: 50px;
   font-family: arial, sans-serif;
   color: rgb(95, 99, 104);
+  background-color: #f2f2f2;
+  font-size: 14px;
+  align-items: flex-start;
+  margin-top: auto;
 }
 #left-foot {
   display: flex;
   flex-direction: row;
 }
 footer a {
-  padding: 5px;
+  margin: 5px;
 }
 #right-foot {
   display: flex;
